@@ -7,4 +7,6 @@ echo "export GIT_USERNAME=\"$username\"" >> ~/.bashrc
 echo "export GIT_TOKEN=\"$token\"">> ~/.bashrc
 echo "alias git-init=\"$(pwd)/git-init.sh\"" >> ~/.bashrc
 
+exec bash
+
 chmod +x git-init.sh

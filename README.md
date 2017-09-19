@@ -13,7 +13,7 @@ export GIT_USERNAME="<username>"
 export GIT_TOKEN="<token>"
 ```
 
-Alternatively, you can run setup.sh to append the env vars to your .bashrc
+Alternatively, you can run setup.sh to append the env vars to your .bashrc and set up a bash alias.
 ```
 chmod +x setup.sh
 ./setup.sh
