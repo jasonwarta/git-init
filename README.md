@@ -1,21 +1,27 @@
 # git-init
 
-this script requires the following env variables to be set
+#### Setup
 
+this script requires the following env variables to be set:  
 GIT_USERNAME with your git username  
 GIT_TOKEN with your git personal access token  
+These are used when calling the api to create a new repo.
 
-these can be set using  
+These can be set using  
 ```
 export GIT_USERNAME="<username>"  
 export GIT_TOKEN="<token>"
 ```
 
-these are used when calling the api to create a new repo
+Alternatively, you can run setup.sh to append the env vars to your .bashrc
+```
+chmod +x setup.sh
+./setup.sh
+```
 
-place the function code and env vars in your .bashrc or .profile
+#### Running
 
-interact with the function with the following syntax:  
+Interact with the function with the following syntax:  
 ```git-init <repo_name> [<public||private>]```
 
 `git-init -h` or `git-init --help` will print the above message
