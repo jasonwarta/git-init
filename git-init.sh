@@ -30,7 +30,7 @@ fi
 
 curl -u "$GIT_USERNAME:$GIT_TOKEN" -d "{ \"name\": \"${repo_name}\", \"private\": ${private}, \"has_issues\": true, \"has_projects\": false, \"has_wiki\": false }" -H "Content-Type: application/json" -X POST https://api.github.com/user/repos 2>&1 1>/dev/null &&
 echo "Creating \"$repo_name\"" &&
-mkdir "./$repo_name" && cd "./$repo_name" &&
+mkdir -p "./$repo_name" && cd "./$repo_name" &&
 echo "# $repo_name" > README.md &&
 git init && 
 git add README.md &&
